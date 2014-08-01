@@ -1,15 +1,29 @@
 \documentclass[12pt,a4paper]{book}
 \title{A book}
+\usepackage{prettyref}
+\includeonly{abstract.tex}
+\newrefformat{ch}{Chapter~\ref{#1}}
+\newrefformat{sec}{Section~\ref{#1}}
+\newrefformat{fig}{Figure~\ref{#1}}
 \begin{document}
+
+  \include{abstract.tex}
   \frontmatter
     \maketitle
     \tableofcontents
+    \chapter{Abstract}
   \mainmatter
     \chapter{Introduction}
+      A short conclusion is presented in \prettyref{ch:conclusion}. 
+      The conclusion starts on page~\pageref{conclusion}.
     \chapter{Another Chapter}
       \section{A section}
         This is a paragraph in a section.
     \chapter{Conclusion}
+      \label{conclusion}
+    \appendix
+      \chapter{Proof of Main Theorem}
+        \section{A Useful Lemma}
   \backmatter
     \chapter*{Acknowledgement}
     \addcontentsline{toc}{chapter}{\bibname}
