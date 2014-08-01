@@ -1,0 +1,17 @@
+\documentclass[12pt,a4paper]{book}
+\title{A book}
+\begin{document}
+  \frontmatter
+    \maketitle
+    \tableofcontents
+  \mainmatter
+    \chapter{Introduction}
+    \chapter{Another Chapter}
+      \section{A section}
+        This is a paragraph in a section.
+    \chapter{Conclusion}
+  \backmatter
+    \chapter*{Acknowledgement}
+    \addcontentsline{toc}{chapter}{\bibname}
+    \bibliography{db}
+\end{document}
