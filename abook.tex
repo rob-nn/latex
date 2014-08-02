@@ -1,11 +1,17 @@
 \documentclass[12pt,a4paper]{book}
-\title{A book}
+
 \usepackage{prettyref}
-\includeonly{abstract.tex}
+\usepackage{named}
+
+\includeonly{abddstract.tex}
 \newrefformat{ch}{Chapter~\ref{#1}}
 \newrefformat{sec}{Section~\ref{#1}}
 \newrefformat{fig}{Figure~\ref{#1}}
+
+\usepackage{named}
+
 \begin{document}
+\title{A book}
 
   \include{abstract.tex}
   \frontmatter
@@ -19,6 +25,11 @@
     \chapter{Another Chapter}
       \section{A section}
         This is a paragraph in a section.
+      \section{Citations}
+        The \LaTeX package was created by Leslie Lamport%
+	~\cite{Lamport:94}
+        on thop of Donald knuth's \TeX{} program%
+	~\cite{Knuth:1990}.
     \chapter{Conclusion}
       \label{conclusion}
     \appendix
