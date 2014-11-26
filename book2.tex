@@ -1,0 +1,16 @@
+\documentclass[12pt,a4paper]{book}
+\title{My Second Book}
+\begin{document}
+	\frontmatter
+		\maketitle
+		\tableofcontents
+	\mainmatter
+		\chapter{Introduction}
+			A short conclusion is presented in Chapter~\ref{TheEnd}
+		\chapter{Conclusion}
+		\label{TheEnd}
+	\backmatter
+		\chapter*{Acknowledgement}
+		\addcontentsline{toc}{chapter}{\bibname}
+		\bibliography{db}
+\end{document}
