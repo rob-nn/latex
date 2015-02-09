@@ -1,0 +1,46 @@
+\documentclass[letterpaper, twocolumn, twoside]{article}
+
+\usepackage [utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\hyphenation{mono-space}
+
+\title{My f{}irst \LaTeX{}}
+\author{Alexandre Labrose}
+
+% MY COMMANDS!!!
+\newcommand{\beto}{I'm {\huge Beto}.}
+\newcommand{\note}[1]{\tiny #1}
+
+\begin{document}
+\selectlanguage{english}
+\maketitle
+\section{Father Section}\label{here}
+\subsection{Chield Section}
+\subsubsection{grandchield Section}
+\section{Other Section}
+Doing a reference is made like this: see section~\ref{here} on page~\pageref{here}
+
+This is a suffeiciently long text that need to be typesette over multiple lines otherwise it would go beyond the right margin and the right side of the screen.
+
+I decide to start a new paragraph to show indentation. This paragraph contains a not so long word that, ver saddly, wont' break: xxxxxxxxxx mono-space.
+\footnote{This is a footnote}. Use \verb|\footnote| command.
+
+Hi \hspace{.20em}chicks, call me. My phone number is \mbox{+55 (61)\ \ \ 8114-7453}.
+
+Emphasing things is \emph{very \emph{very} easey}.
+
+This is a {\Huge{Big}} font.
+There are a greate book \cite{myart2015} to be read.
+
+
+\beto
+The elastic potential $U_e$ of an ideal spring is: $$ U_e = \frac{1}{2}kx^2 $$
+
+$$
+f(x) x \rightarrow l 
+$$
+\bibliographystyle{plain}
+\bibliography{mybib}
+\end{document}
