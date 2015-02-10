@@ -1,0 +1,140 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[brazilian]{babel}
+\usepackage{enumerate}
+\usepackage{multind}
+
+\makeindex{command}
+\makeindex{package}
+
+\newcommand\CTAN{Comprehensive \TeX{} Archive NetWork}
+\newcommand\MonoIdx[2][command]{
+	\texttt{#2}%
+	\index{#1}{\texttt{#2}}%
+}
+
+\title{\LaTeX and friends - Capítulo 02}
+\author{R. A. Lima}
+\begin{document}
+	\maketitle
+	\section{T. Texto}
+	\# \$ \% \& \textasciitilde
+	\_ \textasciicircum 
+	\{ \}
+	\textbackslash
+
+	\section{Agrupando}
+	A bold \textbf{word} and a bold \textbf letter.
+
+	Normal text here. {%Start a group.
+	\bfseries %Now we have bold text.
+	Bold paragraphs in here.
+	} %Close the group.
+	Back to  normal text again.
+
+	\`{a} \'{a} \^{e} \~{o}
+
+	Canção, casarão, circumfléxico, à 
+
+	\begin{center}
+		\emph{Testando uma frase inteira}, ok.\\
+		\textit{Testando uma frase inteira}, ok.\\
+		\textbf{Testando uma frase inteira}, ok.\\
+		\textbf{Testando uma frase inteira}, ok.\\
+		\textsc{Testando uma frase inteira}, ok.\\
+	\end{center}
+
+	Primeira Frase \hphantom{**********} segunda frase.
+	\begin{flushleft}
+		Blah. \\
+		Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah.
+		Blah Blah Blah Blah.
+	\end{flushleft}
+	\begin{flushright}
+		Blah. \\
+		Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah.
+		Blah Blah Blah Blah.
+	\end{flushright}
+
+
+	\begin{tabular}{cccc}
+		\multicolumn{2}{c}{testing...} & \vline col3 & col4 \\
+		col1 & \vline col2 & \vline col3 & col4 \\
+		col1 & \vline col2 & \vline col3 & col4 \\
+		\hline
+		col1 & \vline col2 & col3 & col4
+	\end{tabular}	
+	
+	\begin{tabbing}
+		From \=here to \=there \\
+		\>and \>then \\
+		\>\>all \\
+		\> the \> way\\
+		back \> to \> here.
+	\end{tabbing}
+
+	\begin{itemize}
+		\renewcommand*\labelitemi{+}
+		\item First item;
+		\item Second item;
+		\item Third item is a list.
+			Different labels here.
+			\begin{itemize}
+			\item first nested item.
+			\item second nested item.
+			\end{itemize}
+		\item Third item.
+	\end{itemize}
+
+	\begin{enumerate}
+		\item First item;
+		\item Second item;
+		\item Third item is a list.
+			\begin{enumerate}
+				\item First nested item;
+				\item Second nested item.
+			\end{enumerate}
+	\end{enumerate}
+	
+	Texto ao redor
+	\begin{enumerate}
+		[\textbf{{Item}-A}]
+		\item Primeiro de Dois
+		\item segundo de dois
+	\end{enumerate}
+
+
+	\begin{description}
+		\item[Nome a] testando a;
+		\item[Nome b] testando b;
+		\item[Nome c] testando c;
+	\end{description}
+
+ 
+	O \CTAN \ é o lugar para estar.
+
+	...The command
+		\MonoIdx{\textbackslash\ MakeRobustComand}
+		is provided by the package
+		\MonoIdx[package]{makerobust}. ...
+	\printindex{command} {Index of commands}
+	\printindex{package} {Index of Packages}
+	
+\end{document}

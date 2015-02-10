@@ -1,0 +1,10 @@
+\documentclass{article}
+\usepackage{multind}
+\makeindex{command}
+\makeindex{package}
+\newcommand\MonoIdx[2][command]{
+1 - {#1}\ 2 - \texttt{#2}
+}
+\begin{document}
+\MonoIdx[abc]{def}
+\end{document}
