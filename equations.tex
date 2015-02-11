@@ -1,0 +1,74 @@
+\documentclass[letterpaper, onecolumn, twoside]{article}
+
+\usepackage [utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\title{Equations typsetting}
+\author{Lima, R.}
+
+\begin{document}
+\selectlanguage{english}
+\maketitle
+
+\begin{equation}
+\begin{aligned}
+    \lim_{x \rightarrow p} f(x) = \ell 
+    &\Leftrightarrow f(x) \xrightarrow[x \rightarrow p]{} \ell \\ 
+    &\Leftrightarrow \forall\varepsilon > 0, \exists\delta > 0, \forall x \in I,\\
+    & \phantom{\Leftrightarrow{}}\qquad(|x -p| < \delta \Rightarrow |f(x) -l| < \varepsilon
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+	\forall\varepsilon > 0, \exists\delta > 0, \forall x \in I, \varepsilon)
+\end{aligned}
+\end{equation}
+
+
+\begin{equation}\begin{aligned}
+	\sum_{\substack{1 \leq i \leq m\\ 1 \leq j \leq n}} &= \sum_{i=1}^m\sum_{j=1}^n x_i y_j \\
+	&=\left(\sum_{i=1}^m x_i\right) \cdot \left(\sum_{j=1}^n (y_j)\right)
+\end{aligned}\end{equation}
+
+\begin{equation}\begin{aligned}
+	\int_{-\infty}^{\infty} \cos x^2 \;\mathrm{d}x = \sqrt\frac{\pi}{2}
+\end{aligned}\end{equation}
+
+\begin{equation}\begin{aligned}
+	\left\{\begin{array}{rcl}
+		\mathit{moday} & = & 1 \\
+		& \vdots \\
+		\mathit{wednesdey} & = & 3 \\
+		& \vdots \\
+		\mathit{sunday} & = & 7
+	\end{array}\right.
+\end{aligned}\end{equation}
+
+\begin{equation}
+A = \begin{bmatrix}
+0 & -1 & \cdots & -2 \\
+1 & 0 & \cdots & -1 \\
+\vdots & \vdots &  \ddots & \vdots \\ 
+2 & 1 & \cdots &0 \\
+\end{bmatrix}
+\end{equation}
+
+$ \xleftarrow[down]{up} $
+
+$ \xrightarrow[down]{up} $
+
+$ \xleftrightarrow[down]{up} $
+
+$ \xLeftarrow[down]{up} $
+$ \xRightarrow[down]{up} $
+$ \xLeftrightarrow[down]{up} $
+$ \xhookleftarrow[down]{up} $
+$ \xhookrightarrow[down]{u} $
+$ \xmapsto[down]{up} $
+$ \frac{1}{2} $
+
+\end{document}
