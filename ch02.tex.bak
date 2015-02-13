@@ -1,0 +1,82 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[portuguese]{babel}
+
+
+\title{\LaTeX and friends - Chaperter 02}
+\author{R. A. Lima}
+\begin{document}
+	\maketitle
+	\section{Tieing Text}
+	\# \$ \% \& \textasciitilde
+	\_ \textasciicircum 
+	\{ \}
+	\textbackslash
+
+	\section{Grouping}
+	A bold \textbf{word} and a bold \textbf letter.
+
+	Normal text here. {%Start a group.
+	\bfseries %Now we have bold text.
+	Bold paragraphs in here.
+	} %Close the group.
+	Back to  normal text again.
+
+	\`{a} \'{a} \^{e} \~{o}
+
+	Canção, casarão, circumfléxico, à 
+
+	\begin{center}
+		\emph{Testando uma frase inteira}, ok.\\
+		\textit{Testando uma frase inteira}, ok.\\
+		\textbf{Testando uma frase inteira}, ok.\\
+		\textbf{Testando uma frase inteira}, ok.\\
+		\textsc{Testando uma frase inteira}, ok.\\
+	\end{center}
+
+	Primeira Frase \hphantom{**********} segunda frase.
+	\begin{flushleft}
+		Blah. \\
+		Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah.
+		Blah Blah Blah Blah.
+	\end{flushleft}
+	\begin{flushright}
+		Blah. \\
+		Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah Blah Blah Blah
+		Blah Blah Blah Blah Blah.
+		Blah Blah Blah Blah.
+	\end{flushright}
+
+
+	\begin{tabular}{cccc}
+		\multicolumn{2}{c}{testing...} & \vline col3 & col4 \\
+		col1 & \vline col2 & \vline col3 & col4 \\
+		col1 & \vline col2 & \vline col3 & col4 \\
+		\hline
+		col1 & \vline col2 & col3 & col4
+	\end{tabular}	
+	
+	\begin{tabbing}
+		From \=here to \=there \\
+		\>and \>then \\
+		\>\>all \\
+		\> the \> way\\
+		back \> to \> here.
+	\end{tabbing}
+\end{document}
